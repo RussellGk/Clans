@@ -163,7 +163,8 @@ object RootRepository {
      * @param id - идентификатор персонажа
      * @param result - колбек содержащий в себе полную информацию о персонаже
      */
-    suspend fun findCharacterFullById(id: String): CharacterFull = database.findCharacterFullById(id)
+    suspend fun findCharacterFullById(id: String): CharacterFull =
+        database.findCharacterFullById(id)
 
     /**
      * Метод возвращет true если в базе нет ни одной записи, иначе false

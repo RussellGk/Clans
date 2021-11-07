@@ -23,7 +23,7 @@ class HouseFragment : Fragment() {
     private lateinit var viewModel: HouseViewModel
 
     private var _binding: FragmentHouseBinding? = null
-    private val  binding get() = _binding!!
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,8 +48,7 @@ class HouseFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHouseBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

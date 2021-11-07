@@ -26,7 +26,7 @@ class HousesFragment : Fragment() {
     private lateinit var housesPagerAdapter: HousesPagerAdapter
 
     private var _binding: FragmentHousesBinding? = null
-    private val  binding get() = _binding!!
+    private val binding get() = _binding!!
 
     @ColorInt
     private var currentColor: Int = -1
@@ -62,8 +62,7 @@ class HousesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHousesBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

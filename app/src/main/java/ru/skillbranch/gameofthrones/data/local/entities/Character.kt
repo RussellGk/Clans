@@ -10,8 +10,8 @@ data class Character(
         val died: String,
         val titles: List<String>,
         val aliases: List<String>,
-        val father: String, //rel
-        val mother: String //rel
+        val father: String,
+        val mother: String
 )
 
 data class CharacterWithHouse(
@@ -22,7 +22,7 @@ data class CharacterWithHouse(
         val died: String,
         val titles: List<String>,
         val aliases: List<String>,
-        val father: String, //rel
-        val mother: String, //rel
+        val father: String,
+        val mother: String,
         val house: String
 )

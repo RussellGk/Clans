@@ -12,11 +12,11 @@ data class House(
         val words: String,
         val titles: List<String>,
         val seats: List<String>,
-        val currentLord: String, //rel
-        val heir: String, //rel
+        val currentLord: String,
+        val heir: String,
         val overlord: String,
         val founded: String,
-        val founder: String, //rel
+        val founder: String,
         val diedOut: String,
         val ancestralWeapons: List<String>
 )

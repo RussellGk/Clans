@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
     app:startDestination="@+id/nav_houses">
-
     <fragment
         android:id="@+id/nav_splash"
         android:name="ru.skillbranch.gameofthrones.ui.splash.SplashFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
+        tools:layout="@layout/fragment_splash">
         <action
             android:id="@+id/action_nav_splash_to_nav_houses"
             app:destination="@id/nav_houses"
@@ -21,7 +20,7 @@
         android:id="@+id/nav_houses"
         android:name="ru.skillbranch.gameofthrones.ui.houses.HousesFragment"
         android:label="fragment_houses"
-        tools:layout="@layout/fragment_houses" >
+        tools:layout="@layout/fragment_houses">
         <action
             android:id="@+id/action_nav_houses_to_characterFragment"
             app:destination="@id/nav_character" />
@@ -30,7 +29,7 @@
         android:id="@+id/nav_character"
         android:name="ru.skillbranch.gameofthrones.ui.character.CharacterFragment"
         android:label="fragment_character"
-        tools:layout="@layout/fragment_character" >
+        tools:layout="@layout/fragment_character">
         <action
             android:id="@+id/action_characterFragment_self"
             app:destination="@id/nav_character" />

@@ -20,7 +20,7 @@ class CharacterFragment : Fragment() {
     private lateinit var viewModel: CharacterViewModel
 
     private var _binding: FragmentCharacterBinding? = null
-    private val  binding get() = _binding!!
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,8 +35,7 @@ class CharacterFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentCharacterBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

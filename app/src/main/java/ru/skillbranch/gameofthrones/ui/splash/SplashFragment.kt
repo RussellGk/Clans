@@ -15,7 +15,7 @@ class SplashFragment : Fragment() {
     private lateinit var animation: AnimatorSet
 
     private var _binding: FragmentSplashBinding? = null
-    private val  binding get() = _binding!!
+    private val binding get() = _binding!!
 
 
     override fun onCreateView(
@@ -24,8 +24,7 @@ class SplashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSplashBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
 
